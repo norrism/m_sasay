@@ -13,8 +13,8 @@ Installation
 2. Add the following code to your 'modules.conf' file
 
         #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
-        # SASAY module: Adds the /SASAY command which forces a user to send a
-        # given message to a channel.
+        # SASAY module: Adds the /SASAY command which sends a message from any
+        # user to a channel.
         # This module is oper-only.
         # To use, SASAY must be in one of your oper class blocks.
         <module name="m_sasay.so">
@@ -26,7 +26,7 @@ Installation
 4. Run the following command from the root InspIRCd directory:
 
 
-        /make && make install
+        make && make install
     
     
 5. Start the InspIRCd server.
