@@ -9,24 +9,27 @@ Installation
 -
 
 1. Download the file m_sasay.cpp and place it in the '/src/modules/' directory of your InspIRCd installation.
+
 2. Add the following code to your 'modules.conf' file
 
-    #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
-    # SASAY module: Adds the /SASAY command which forces a user to send a
-    # given message to a channel.
-    # This module is oper-only.
-    # To use, SASAY must be in one of your oper class blocks.
-    <module name="m_sasay.so">
+        #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+        # SASAY module: Adds the /SASAY command which forces a user to send a
+        # given message to a channel.
+        # This module is oper-only.
+        # To use, SASAY must be in one of your oper class blocks.
+        <module name="m_sasay.so">
 
 3. Modify your 'opers.conf' file to include 'SASAY' as a command under the SACommands oper class. e.g:
 
-    <class name="SACommands" commands="SAJOIN SAPART SANICK SAQUIT SATOPIC SAKICK SAMODE OJOIN SASAY">
+        <class name="SACommands" commands="SAJOIN SAPART SANICK SAQUIT SATOPIC SAKICK SAMODE OJOIN SASAY">
 
 4. Run the following command from the root InspIRCd directory:
 
-    /make && make install
 
-5. Start your InspIRCd server.
+        /make && make install
+    
+    
+5. Start the InspIRCd server.
 
 Usage
 -
