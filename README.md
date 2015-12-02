@@ -34,6 +34,6 @@ Installation
 Usage
 -
 
-You must be identified as an oper with SASAY command privledges to use this. The following command would send <message> to <channel> from <user>.
+You must be identified as an oper with SASAY command privledges to use this. The following command would send \<message> to \<channel> from \<nick>.
 
     /SASAY <nick> <channel> <message>
