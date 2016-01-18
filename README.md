@@ -29,7 +29,9 @@ Installation
         make && make install
     
     
-5. Start the InspIRCd server.
+5. Restart the InspIRCd server or load the module from the server:
+
+        /loadmodule m_sasay.so
 
 Usage
 -
